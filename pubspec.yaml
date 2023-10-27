@@ -1,0 +1,87 @@
+name: railway
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # package for intro and splash screen
+  animated_splash_screen: ^1.3.0
+  lottie: ^2.3.2
+  smooth_page_indicator: ^1.0.0
+  # package for screen drawer
+  flutter_advanced_drawer: ^1.3.5
+  flutter_faq: ^1.0.1+1
+  # package to handle firebase database
+  firebase_auth: ^4.6.1
+  firebase_core: ^2.13.0
+  cloud_firestore: ^4.7.1
+  firebase_storage: ^11.2.2
+  # package for shared preferences
+  shared_preferences: ^2.1.1
+  url_launcher: ^6.1.11
+  http: ^0.13.5
+  fluttertoast: ^8.2.1
+  # package for update image
+  image_picker: ^0.8.7+5
+  uuid: ^3.0.7
+  liquid_pull_to_refresh: ^3.0.1
+  flutter_vlc_player: ^7.3.1
+  drop_shadow: ^0.1.0
+  share_plus: ^7.0.0
+  rating_dialog: ^2.0.4
+  store_redirect: ^2.0.1
+  intl: ^0.18.1
+  fl_chart: ^0.35.0
+  awesome_notifications: ^0.8.2
+  flutter_tts: ^3.8.3
+
+  pdf: ^3.10.4
+  printing: ^5.11.0
+  path_provider: ^2.0.15
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icons/logo.png"
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/animations/
+    - assets/images/icons/
+    - assets/images/notification_icons/
+    - assets/images/icons/btn_icons/
+    - assets/images/icons/drawer_icons/
+    - assets/images/img/
+
+
+  fonts:
+    - family: Roboto-Regular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
