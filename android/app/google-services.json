@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "142256564998",
+    "project_id": "railway-management-57dbe",
+    "storage_bucket": "railway-management-57dbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142256564998:android:b8691ecceae180d3370c87",
+        "android_client_info": {
+          "package_name": "com.management.railway"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAks0mJteO2H9ThV-3iKLJe7LBVKGfdbZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
