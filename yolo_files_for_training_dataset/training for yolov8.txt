@@ -1,0 +1,12 @@
+first go to the google colab that run this files on by one  then create a copy of google colab
+
+!nvidia-smi
+now intall this 
+!pip install ultralytics
+step 3 for dowlowing yolov8n source ki jagah per jis bhi image ko test karna hai woth yolov8 se
+
+from ultralytics import YOLO
+!yolo task=detect mode=predict model=yolov8l.pt conf=0.25 source='/content/frame244_jpg.rf.dfa8a75ee1e04f179a555d5a5cd0483d.jpg'
+step 4 now ab hame train karna hai model direct dataset se google drive pe upload kar data set 
+
+!yolo task=detect mode=train model=yolov8l.pt data='/content/drive/MyDrive/datasets/employeesurvillence/data.yaml' epochs=50 imgsz=640
