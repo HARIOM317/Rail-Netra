@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "railway-management-57dbe",
+  "private_key_id": "3c330e3108be17bd7a1657fb264db226c802b4a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCp42viv1dVZohv\nqfWm/B64r3VhL9UUj0i4PtmBSupQWYPY+cEPcElpm6v8UKLl5FECG8ypmx4NeCm6\nkECCKjOnxNVDyGuXxbIBKIOcyHr9HKKqcubaEsYhm9NJ9NnaRpeS4tuE2HMsDtPJ\nUXU0UrpJpndYh2HEflgPOkDT785WqZI/T1/VCzJgszzeH47q2eKw4fMahLUrlP17\nwKFYssWt42vW589T+TMJ5PuAbe3AY6EjCLtMY9MdIDF+lW3xYH9s/inFP4pxDCaV\nI8OkfKLO4fwtNNTUOLI+0pSaVwJ2N0ZrmPYZBg91Xvncwazgz+luZ4x/m5Fi06xC\n4aXcaOSrAgMBAAECggEAByZA9gvjWv6zoy9d3ScjC9amc+6VYwYco1RRxvUmIzeB\nKvJnw4SQMleQx0+Fa3NOTW5qEIEspJh3+Rf0/wVToy3PY8jdbketlArmbwSo2FoK\nJm4rdOXxXJy4KZaaTGtIGbBeWJrbTfFZzFEXQ5pvqIXO4/TekmxWvF1RORoQbukm\nVp5t9wcZPp9wLN5+DOOFuYSq+79VQTkbfY+PtmY/y5dTwR9H/Xa4NEUw8r8JYWgM\nwRKksRcC1H6NKnGO7PoId8wPypV4LysNE/FLYGbkfXSEeYiSLz8xGAzgMOwz6h94\nrQ5e8dKp3ZhzaYTPwZwG8huG0/qsA7gaw/jZ9R7uwQKBgQDjFXHBHz8tCRv9tAKa\nL9FaPSvBJ/NHvR1Ij0FuiBy50bOwTuYJMW2b+ahXDNwhUrWfk5YqNFIHxN24hUuy\nVOJmxCftP36xP0T/2u1yyXs7EXlOL+8ani9ZzmGoySStwEHTQCvPkja7BlMJOjbf\niHSeaO1g1E/nlrR3IqlD8QBtuwKBgQC/hYBfpG79MyRCqcXN/SlVrNpZQ9mMkVWr\nBdUITnRtVjwLr9LjlTS9lcT52jsXkn1aYOhJFvu12zHL3QDVjS5SaO1LUFtqrawG\nVV/G86u92GtI/tiYoHeVxXfEetYsxH7vr7EYZlvjuaUvwYYK8GrV3nLX/ZTOhKOG\nbgoqC0F90QKBgQDYaWJskxPJHqpPYVMtkC6rGirtvN4L2z3iHaxU42DE8gWWG8r8\nrd9wyz/UHgxXsZQnjSaJ+CzI/KP1KwtV27GcEIqgfmeGEe73CrRKNZu8Uk3R5rqv\nGluz8Yx+p5rN/7B72+ckvYptOHzACXusEkZZhVPceNnhsm0wMJcxiadH6wKBgQC+\np09b5nz2YWq/UfIvVM1JFIFoSzrNy//T+EJRuof8L9QmbikplOajs+waLTyWAqX2\nynFyEQcRydqQbrjd3WU3dGyEhMH8OFb/Fw35J6jXnBFw4QENLvDcj27ikMWUWydh\nwywwdfUThUMDf0rIqPwxWvhIO49e5ntC31gO8pWHgQKBgQDJNe+oexjKdR3lcdqz\nZzEEScZ2GHshvOCB9zlD0lALKtfG0z8ZI/uSCYViBKpYeFsekoZaIz3+QIo7lVN8\nhDnBLHFOFm/uNRAakNC1dkMAUZxwV1j6CfEe1KPYDqw3k0ZGjYwAZetslU5riUja\nl2GNGsUvAvlxBlEQU4E+e43ZOA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-yko0r@railway-management-57dbe.iam.gserviceaccount.com",
+  "client_id": "118240343984421907186",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-yko0r%40railway-management-57dbe.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
