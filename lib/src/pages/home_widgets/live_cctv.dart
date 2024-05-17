@@ -115,7 +115,7 @@ class _LiveCCTVState extends State<LiveCCTV> {
                       : null,
                   child: const Text(
                     "Link",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),
                   ),
                 ),
               )
@@ -419,7 +419,7 @@ class _LiveCCTVState extends State<LiveCCTV> {
                           "assets/images/icons/drawer_icons/live_drawer.png",
                           height: 24,
                         ),
-                        label: const Text("Add CCTV"),
+                        label: const Text("Add CCTV", style: TextStyle(color: Colors.black54),),
                       ),
                     ),
                   )

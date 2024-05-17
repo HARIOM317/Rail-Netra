@@ -69,7 +69,7 @@ class _ChooseOptionState extends State<ChooseOption> {
                       : null,
               child: const Text(
                 "Select",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),
               ),
             ),
           )

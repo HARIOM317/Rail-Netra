@@ -134,31 +134,30 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
           title: Text(
             "USER PROFILE",
             style: TextStyle(
-                color: primaryColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 22),
+                color: primaryColor, fontWeight: FontWeight.bold, fontSize: 22),
           ),
         ),
         body: SafeArea(
           child: isSaving == true
               ? const Center(child: CircularProgressIndicator())
               : LiquidPullToRefresh(
-            onRefresh: _handleRefresh,
-            color: Colors.transparent,
-            backgroundColor: primaryColor,
-            height: 300,
-            animSpeedFactor: 3,
-            showChildOpacityTransition: true,
-                child: ListView(
-                  children: [
-                    Padding(
+                  onRefresh: _handleRefresh,
+                  color: Colors.transparent,
+                  backgroundColor: primaryColor,
+                  height: 300,
+                  animSpeedFactor: 3,
+                  showChildOpacityTransition: true,
+                  child: ListView(
+                    children: [
+                      Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Center(
                           child: Form(
                             key: key,
                             child: SingleChildScrollView(
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Stack(
                                     children: [
@@ -182,13 +181,16 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                             : profilePic!.contains('http')
                                                 ? CircleAvatar(
                                                     radius: 70,
-                                                    backgroundColor: secondaryColor,
+                                                    backgroundColor:
+                                                        secondaryColor,
                                                     backgroundImage:
-                                                        NetworkImage(profilePic!),
+                                                        NetworkImage(
+                                                            profilePic!),
                                                   )
                                                 : CircleAvatar(
                                                     radius: 70,
-                                                    backgroundColor: secondaryColor,
+                                                    backgroundColor:
+                                                        secondaryColor,
                                                     backgroundImage: FileImage(
                                                         File(profilePic!)),
                                                   ),
@@ -201,7 +203,8 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                               isImageSelect = true;
                                               final XFile? pickImage =
                                                   await ImagePicker().pickImage(
-                                                      source: ImageSource.gallery,
+                                                      source:
+                                                          ImageSource.gallery,
                                                       imageQuality: 50);
 
                                               if (pickImage != null) {
@@ -229,21 +232,25 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        top: 50, bottom: 10, left: 10, right: 10),
+                                        top: 50,
+                                        bottom: 10,
+                                        left: 10,
+                                        right: 10),
                                     child: TextFormField(
                                       enabled: true,
                                       controller: nameController,
                                       validator: (v) {
                                         if (v!.isEmpty) {
                                           return "User Name";
-                                        } else if(v.length > 20){
+                                        } else if (v.length > 20) {
                                           return "Name is too long";
                                         } else {
                                           return null;
                                         }
                                       },
                                       decoration: InputDecoration(
-                                        fillColor: Colors.white.withOpacity(0.3),
+                                        fillColor:
+                                            Colors.white.withOpacity(0.3),
                                         filled: true,
                                         prefixIcon: const Icon(Icons.person),
                                         suffixIcon: const Icon(Icons.edit),
@@ -251,13 +258,15 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         labelText: "Name",
                                         border: InputBorder.none,
                                         focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(15),
+                                            borderRadius:
+                                                BorderRadius.circular(15),
                                             borderSide: BorderSide(
                                                 style: BorderStyle.solid,
                                                 color: primaryColor,
                                                 width: 1.5)),
                                         enabledBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           borderSide: const BorderSide(
                                             style: BorderStyle.solid,
                                             color: Color(0xFF909A9E),
@@ -265,19 +274,23 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         ),
                                       ),
                                       style: const TextStyle(
-                                          fontSize: 16,
-                                          ),
+                                        fontSize: 16,
+                                      ),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        top: 10, bottom: 10, left: 10, right: 10),
+                                        top: 10,
+                                        bottom: 10,
+                                        left: 10,
+                                        right: 10),
                                     child: TextFormField(
                                       enabled: true,
                                       controller: aboutController,
                                       decoration: InputDecoration(
-                                        fillColor: Colors.white.withOpacity(0.3),
+                                        fillColor:
+                                            Colors.white.withOpacity(0.3),
                                         filled: true,
                                         prefixIcon: const Icon(Icons.info),
                                         suffixIcon: const Icon(Icons.edit),
@@ -285,13 +298,15 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         hintText: aboutController.text,
                                         border: InputBorder.none,
                                         focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(15),
+                                            borderRadius:
+                                                BorderRadius.circular(15),
                                             borderSide: BorderSide(
                                                 style: BorderStyle.solid,
                                                 color: primaryColor,
                                                 width: 1.5)),
                                         enabledBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           borderSide: const BorderSide(
                                             style: BorderStyle.solid,
                                             color: Color(0xFF909A9E),
@@ -299,14 +314,17 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         ),
                                       ),
                                       style: const TextStyle(
-                                          fontSize: 16,
-                                          ),
+                                        fontSize: 16,
+                                      ),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        top: 10, bottom: 10, left: 10, right: 10),
+                                        top: 10,
+                                        bottom: 10,
+                                        left: 10,
+                                        right: 10),
                                     child: TextFormField(
                                       enabled: true,
                                       controller: emailController,
@@ -321,7 +339,8 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         }
                                       },
                                       decoration: InputDecoration(
-                                        fillColor: Colors.white.withOpacity(0.3),
+                                        fillColor:
+                                            Colors.white.withOpacity(0.3),
                                         filled: true,
                                         prefixIcon: const Icon(Icons.email),
                                         suffixIcon: const Icon(Icons.edit),
@@ -329,13 +348,15 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         hintText: emailController.text,
                                         border: InputBorder.none,
                                         focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(15),
+                                            borderRadius:
+                                                BorderRadius.circular(15),
                                             borderSide: BorderSide(
                                                 style: BorderStyle.solid,
                                                 color: primaryColor,
                                                 width: 1.5)),
                                         enabledBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           borderSide: const BorderSide(
                                             style: BorderStyle.solid,
                                             color: Color(0xFF909A9E),
@@ -343,14 +364,17 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         ),
                                       ),
                                       style: const TextStyle(
-                                          fontSize: 16,
-                                         ),
+                                        fontSize: 16,
+                                      ),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        top: 10, bottom: 10, left: 10, right: 10),
+                                        top: 10,
+                                        bottom: 10,
+                                        left: 10,
+                                        right: 10),
                                     child: TextFormField(
                                       enabled: true,
                                       controller: contactController,
@@ -365,7 +389,8 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         }
                                       },
                                       decoration: InputDecoration(
-                                        fillColor: Colors.white.withOpacity(0.3),
+                                        fillColor:
+                                            Colors.white.withOpacity(0.3),
                                         filled: true,
                                         prefixIcon: const Icon(Icons.phone),
                                         suffixIcon: const Icon(Icons.edit),
@@ -373,13 +398,15 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         hintText: contactController.text,
                                         border: InputBorder.none,
                                         focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(15),
+                                            borderRadius:
+                                                BorderRadius.circular(15),
                                             borderSide: BorderSide(
                                                 style: BorderStyle.solid,
                                                 color: primaryColor,
                                                 width: 1.5)),
                                         enabledBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           borderSide: const BorderSide(
                                             style: BorderStyle.solid,
                                             color: Color(0xFF909A9E),
@@ -387,8 +414,8 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                         ),
                                       ),
                                       style: const TextStyle(
-                                          fontSize: 16,
-                                          ),
+                                        fontSize: 16,
+                                      ),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
@@ -397,97 +424,129 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                                     child: PrimaryButton(
                                         title: "UPDATE PROFILE",
                                         onPressed: () async {
-                                          bool? updateProfile = await showDialog(
-                                              context: context,
-                                              builder: (BuildContext context) {
-                                                return AlertDialog(
-                                                  elevation: 10,
-                                                  shadowColor: primaryColor
-                                                      .withOpacity(0.25),
-                                                  backgroundColor: Colors.white,
-                                                  shape:
-                                                      const RoundedRectangleBorder(
-                                                    borderRadius: BorderRadius.all(
-                                                        Radius.circular(20.0)),
-                                                  ),
-                                                  title: const Text('Confirm'),
-                                                  content: const Text(
-                                                      'Are you sure to update your profile?'),
-                                                  actions: <Widget>[
-                                                    TextButton(
-                                                        onPressed: () {
-                                                          Navigator.of(context)
-                                                              .pop(false);
-                                                          Fluttertoast.showToast(
-                                                              msg:
-                                                                  "Cancel to Updated Profile");
-                                                        },
-                                                        child: const Text("No")),
-                                                    TextButton(
-                                                        onPressed: () async {
-                                                          Navigator.of(context)
-                                                              .pop(true);
+                                          bool? updateProfile =
+                                              await showDialog(
+                                                  context: context,
+                                                  builder:
+                                                      (BuildContext context) {
+                                                    return AlertDialog(
+                                                      elevation: 10,
+                                                      shadowColor: primaryColor
+                                                          .withOpacity(0.25),
+                                                      backgroundColor:
+                                                          Colors.white,
+                                                      shape:
+                                                          const RoundedRectangleBorder(
+                                                        borderRadius:
+                                                            BorderRadius.all(
+                                                                Radius.circular(
+                                                                    20.0)),
+                                                      ),
+                                                      title:
+                                                          const Text('Confirm'),
+                                                      content: const Text(
+                                                          'Are you sure to update your profile?'),
+                                                      actions: <Widget>[
+                                                        TextButton(
+                                                            onPressed: () {
+                                                              Navigator.of(
+                                                                      context)
+                                                                  .pop(false);
+                                                              Fluttertoast
+                                                                  .showToast(
+                                                                      msg:
+                                                                          "Cancel to Updated Profile");
+                                                            },
+                                                            child: const Text(
+                                                                "No")),
+                                                        TextButton(
+                                                            onPressed:
+                                                                () async {
+                                                              Navigator.of(
+                                                                      context)
+                                                                  .pop(true);
 
-                                                          // todo: updating profile
-                                                          // update name on firebase
-                                                          if (nameController
-                                                                  .text.length >= 3 && nameController.text.length < 21) {
-                                                            await FirebaseFirestore
-                                                                .instance
-                                                                .collection('users')
-                                                                .doc(id)
-                                                                .update({
-                                                              'name': nameController
-                                                                  .text
-                                                            });
-                                                          } else if(nameController.text.length > 20){
-                                                            Fluttertoast.showToast(msg: "Name is too long!");
-                                                          }
-                                                          else {
-                                                            Fluttertoast.showToast(
-                                                                msg:
-                                                                    "Name should contain at least 3 characters!");
-                                                          }
+                                                              // todo: updating profile
+                                                              // update name on firebase
+                                                              if (nameController
+                                                                          .text
+                                                                          .length >=
+                                                                      3 &&
+                                                                  nameController
+                                                                          .text
+                                                                          .length <
+                                                                      21) {
+                                                                await FirebaseFirestore
+                                                                    .instance
+                                                                    .collection(
+                                                                        'users')
+                                                                    .doc(id)
+                                                                    .update({
+                                                                  'name':
+                                                                      nameController
+                                                                          .text
+                                                                });
+                                                              } else if (nameController
+                                                                      .text
+                                                                      .length >
+                                                                  20) {
+                                                                Fluttertoast
+                                                                    .showToast(
+                                                                        msg:
+                                                                            "Name is too long!");
+                                                              } else {
+                                                                Fluttertoast
+                                                                    .showToast(
+                                                                        msg:
+                                                                            "Name should contain at least 3 characters!");
+                                                              }
 
-                                                          // update mobile number if it is valid
-                                                          if (contactController
-                                                                  .text.length ==
-                                                              10) {
-                                                            updateMobileNumber();
-                                                          }
+                                                              // update mobile number if it is valid
+                                                              if (contactController
+                                                                      .text
+                                                                      .length ==
+                                                                  10) {
+                                                                updateMobileNumber();
+                                                              }
 
-                                                          if (aboutController
-                                                                  .text.length >=
-                                                              3) {
-                                                            updateAbout();
-                                                          } else {
-                                                            Fluttertoast.showToast(
-                                                                msg:
-                                                                    "About should contain at least 3 characters!");
-                                                          }
+                                                              if (aboutController
+                                                                      .text
+                                                                      .length >=
+                                                                  3) {
+                                                                updateAbout();
+                                                              } else {
+                                                                Fluttertoast
+                                                                    .showToast(
+                                                                        msg:
+                                                                            "About should contain at least 3 characters!");
+                                                              }
 
-                                                          // update image on firebase
-                                                          if (key.currentState!
-                                                              .validate()) {
-                                                            if (isImageSelect) {
-                                                              profilePic == null
-                                                                  ? Fluttertoast
-                                                                      .showToast(
-                                                                          msg:
-                                                                              "Please select an profile picture!")
-                                                                  : update();
-                                                            }
-                                                          }
+                                                              // update image on firebase
+                                                              if (key
+                                                                  .currentState!
+                                                                  .validate()) {
+                                                                if (isImageSelect) {
+                                                                  profilePic ==
+                                                                          null
+                                                                      ? Fluttertoast
+                                                                          .showToast(
+                                                                              msg: "Please select an profile picture!")
+                                                                      : update();
+                                                                }
+                                                              }
 
-                                                          isImageSelect = false;
-                                                          Fluttertoast.showToast(
-                                                              msg:
-                                                                  "Profile Updated Successfully");
-                                                        },
-                                                        child: const Text("Yes")),
-                                                  ],
-                                                );
-                                              });
+                                                              isImageSelect =
+                                                                  false;
+                                                              Fluttertoast
+                                                                  .showToast(
+                                                                      msg:
+                                                                          "Profile Updated Successfully");
+                                                            },
+                                                            child: const Text(
+                                                                "Yes")),
+                                                      ],
+                                                    );
+                                                  });
 
                                           return updateProfile ?? false;
                                         }),
@@ -498,9 +557,9 @@ class _UpdateUserProfile extends State<UpdateUserProfile> {
                           ),
                         ),
                       ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
         ),
       ),
     );

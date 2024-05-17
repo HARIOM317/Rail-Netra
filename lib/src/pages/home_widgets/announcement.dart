@@ -126,7 +126,7 @@ class _AnnouncementState extends State<Announcement> {
                   "Make Announcement",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18),
+                      fontSize: 18, color: Colors.white),
                 ),
               ),
             )
