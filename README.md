@@ -1,16 +1,10 @@
-# railway
+# Rail Netra
 
-A new Flutter project.
+A complete solution for indian railway monitoring and management.
 
-## Getting Started
+## The Rail Netra App Preview
 
-This project is a starting point for a Flutter application.
+![rail_netra](https://github.com/HARIOM317/Rail-Netra/assets/75768277/05188cdb-7155-4249-909a-9dafb30d84e1)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Rail-Netra is a groundbreaking app designed to revolutionize Indian Railways using AI/ML, deep learning, and advanced technology. This multifaceted solution enhances crowd management, crime prevention, cleanliness maintenance, and work monitoring. It leverages a powerful AI-based CCTV network to predict crowd patterns, detect suspicious behavior, and ensure efficient work operations. With cutting-edge tech like Flutter, Firebase, LSTM, OpenCV, YOLO, Python, TensorFlow, and scikit-learn, Rail-Netra offers real-time insights and responsive user interfaces.
