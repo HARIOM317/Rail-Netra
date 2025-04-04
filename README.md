@@ -85,8 +85,8 @@ RailNetra is engineered to optimize and transform railway operations with a comb
 ### Prerequisites
 - **Flutter SDK**: [Install here](https://flutter.dev/docs/get-started/install)
 - **Firebase Account**: [Set up on Firebase Console](https://console.firebase.google.com/)
-- **Python 3.x**: [Download Python](https://www.python.org/downloads/)
-- **Required Python Libraries**: Listed in `requirements.txt` (includes TensorFlow, scikit-learn, OpenCV, etc.)
+- **Python**: [Download Python](https://www.python.org/downloads/)
+- **Required Python Libraries**: TensorFlow, scikit-learn, OpenCV, etc.
 
 ### Setup Steps
 
@@ -115,28 +115,6 @@ RailNetra is engineered to optimize and transform railway operations with a comb
     - Follow the Firebase setup guide for Flutter.
   
     - Add the google-services.json (Android) or GoogleService-Info.plist (iOS) to the appropriate directories.
-
-4. **Python Environment Setup:**
-
-    - Create and activate a virtual environment:
-      
-        ```
-        python -m venv venv
-        source venv/bin/activate  # On Windows: venv\Scripts\activate
-        ```
-        
-    - Install the necessary libraries:
-  
-        ```
-        pip install -r requirements.txt
-        ```
-5. Run Python Scripts:
-
-    - Execute your AI/ML scripts:
-  
-        ```
-        python your_script.py
-        ```
 
 ---
 
@@ -180,7 +158,7 @@ We welcome contributions to improve RailNetra. Please follow these steps to cont
 ---
 
 ## 📄 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
